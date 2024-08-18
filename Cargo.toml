@@ -7,13 +7,10 @@ exclude = [
   "dev",
   "rustlings",
   "learning-cxx",
-<<<<<<< HEAD
   "exams"
-=======
   "exams",
   "TinyInfiniTensor",
   "learning-lm-rs"
->>>>>>> template/main
 ]
 
 [workspace.package]

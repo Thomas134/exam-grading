@@ -23,11 +23,8 @@ jobs:
       run_cxx: ${{ steps.check.outputs.run_cxx }}
       run_test: ${{ steps.check.outputs.run_test }}
       api_url: ${{ steps.decode_api_url.outputs.url }}
-<<<<<<< HEAD
-=======
       run_project1: ${{ steps.check.outputs.run_project1 }}
       run_project2: ${{ steps.check.outputs.run_project2 }}
->>>>>>> template/main
     steps:
     - uses: actions/checkout@v3
       with:
@@ -54,8 +51,6 @@ jobs:
         else
           echo "::set-output name=run_test::false"
         fi
-<<<<<<< HEAD
-=======
         if [ -d "TinyInfiniTensor" ]; then 
           echo "::set-output name=run_project1::true"
         else
@@ -66,7 +61,6 @@ jobs:
         else
           echo "::set-output name=run_project2::false"
         fi
->>>>>>> template/main
 
   rustlings:
     name: Rustlings Autograding
@@ -269,8 +263,6 @@ jobs:
                 "totalScore": 23
               }' \
           -v
-<<<<<<< HEAD
-=======
 
   TinyInfiniTensor:  
     name: TinyInfiniTensor Autograding
@@ -529,4 +521,3 @@ jobs:
           -H "Content-Type: application/json" \
           -d "$(cat $summary_file)" \
           -v
->>>>>>> template/main
