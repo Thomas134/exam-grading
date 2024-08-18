@@ -4,3 +4,6 @@
 [submodule "exams"]
 	path = exams
 	url = git@github.com:Thomas134/exams.git
+[submodule "TinyInfiniTensor"]
+	path = TinyInfiniTensor
+	url = git@github.com:Thomas134/TinyInfiniTensor.git
